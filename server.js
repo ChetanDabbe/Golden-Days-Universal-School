@@ -464,7 +464,7 @@ app.post('/send-notice', upload.single('attachment'), async (req, res) => {
       auth: {
 
           user:'goldendaysuniversalschool1@gmail.com',
-          pass :'bqwimwugurltmbhy',
+          pass :process.env.mailPass,
       },
   });
 
